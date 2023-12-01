@@ -1,4 +1,5 @@
 alert('Olá mundo! Boas vindas ao jogo do Número Secreto!');
+let nome = prompt('Qual é o seu nome?');
 
 let numeroMaximo = 100;
 let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
@@ -7,7 +8,7 @@ let chute;
 let tentativas = 1;
 
 while (chute != numeroSecreto) {
-    chute = prompt('Escolha um número entre 1 e ' + numeroMaximo + ':');
+    chute = prompt(nome + ', Escolha um número entre 1 e ' + numeroMaximo + ':');
     // se o chute for igual ao número secreto, queremos executar algum código, isto é:
 if (numeroSecreto == chute){
     break;
